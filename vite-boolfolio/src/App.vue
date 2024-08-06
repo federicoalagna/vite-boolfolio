@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+   
+    <RouterView />
     <h1>Progetti</h1>
     <div v-if="loading">Caricamento...</div>
     <div v-if="error">{{ error }}</div>
@@ -36,5 +38,15 @@ export default {
         this.loading = false;
       });
   }
+};
+</script>
+
+<template>
+
+</template>
+
+<script>
+export default {
+  name: 'App'
 };
 </script>
